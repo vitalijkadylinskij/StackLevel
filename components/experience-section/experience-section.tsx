@@ -9,14 +9,32 @@ export function ExperienceSection() {
                     Tools</h1>
             </div>
             <div className="relative container flex w-full h-full justify-center mx-auto pb-30 px-4 w-full lg:px-34">
-                <div className="rounded-xl w-full h-full min-h-[780px] bg-[url('/images/exp-section.jpg')] bg-cover bg-no-repeat bg-center">
-                    <div className="flex justify-between py-20 px-15">
-                        <h2 className="font-normal text-5xl max-w-[525px]">
-                            Build Smarter with AI Generators
-                        </h2>
-                        <div className="flex justify-end">
-                            <div className="w-[228px] h-[27px] rounded-md mr-5 bg-white/17 text-center items-center">Simplifying AI for Everyone</div>
-                            <div className="w-[310px] h-[27px] rounded-md mr-5 bg-white/17 text-center items-center">Creations with AI-Driven Technology</div>
+                <div
+                    className="rounded-xl w-full h-full min-h-[780px] bg-[url('/images/exp-section.jpg')] bg-cover bg-no-repeat bg-center">
+                    <div className="flex flex-col h-[780px] justify-between py-20 px-15">
+                        <div className="flex w-full h-full">
+                            <h2 className="font-normal text-5xl max-w-[525px]">
+                                Build Smarter with AI Generators
+                            </h2>
+                            <div className="flex justify-end">
+                                <div
+                                    className="w-[228px] h-[27px] rounded-md mr-5 bg-white/17 text-center items-center">Simplifying
+                                    AI for Everyone
+                                </div>
+                                <div
+                                    className="w-[310px] h-[27px] rounded-md mr-5 bg-white/17 text-center items-center">Creations
+                                    with AI-Driven Technology
+                                </div>
+                            </div>
+                        </div>
+                        <div className="flex justify-between">
+                            <div className="w-full max-w-[390px] font-normal text-base text-white/80">
+                                From generating complex algorithms to simple AI-driven tools, we offer cutting-edge
+                            </div>
+                            <div className="flex">
+                                <div className="mr-10 font-medium text-4xl">57.42+</div>
+                                <div className="w-full max-w-[214px] text-xl font-normal">Build Smarter with AI Generators</div>
+                            </div>
                         </div>
                     </div>
                 </div>
