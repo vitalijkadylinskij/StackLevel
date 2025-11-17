@@ -41,7 +41,7 @@ export default function MainNavbar() {
 
     return (
         <header className="relative bg-transparent z-50 w-full transition-colors duration-300 mb-10">
-            <div className="container mx-auto flex h-26 items-center justify-between px-4 lg:px-34">
+            <div className="container mx-auto flex h-26 items-center justify-between px-4 lg:px-14">
                 <div className="flex items-center space-x-6">
                     <Link href="/" rel="alternate" className="flex items-center space-x-2 pr-10">
                         <Image

@@ -42,6 +42,8 @@
   --radius-xl: calc(var(--radius) + 4px);
   --color-custom-dark: var(--custom-dark);
   --color-custom-blue: var(--custom-blue);
+  --color-custom-violet: var(--custom-violet);
+  --color-custom-dark-blue: var(--custom-dark-blue);
 }
 
 :root {
@@ -79,6 +81,8 @@
   --sidebar-ring: oklch(0.708 0 0);
   --custom-dark: #040711;
   --custom-blue: #1e92ff;
+  --custom-violet: #C30EFF;
+  --custom-dark-blue: #471EFF;
 }
 
 .dark {
@@ -131,4 +135,65 @@
 }
 .gradient-bg {
   background: linear-gradient(90deg, #c30eff 0%, #1e92ff 100%);
+}
+@layer components {
+  .glow-bottom {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .glow-bottom::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(
+            circle at center bottom,
+            rgba(30, 146, 255, 0.4) 0%,
+            rgba(59, 130, 246, 0.1) 30%,
+            transparent 50%
+    );
+    pointer-events: none;
+  }
+  .glow-sides {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .glow-sides::before {
+    content: '';
+    position: absolute;
+    left: -10%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(
+            circle at left center,
+            rgba(59, 130, 246, 0.4) 0%,
+            rgba(59, 130, 246, 0.1) 30%,
+            transparent 40%
+    );
+    pointer-events: none;
+  }
+
+  .glow-sides::after {
+    content: '';
+    position: absolute;
+    right: -10%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(
+            circle at right center,
+            rgba(59, 130, 246, 0.4) 0%,
+            rgba(59, 130, 246, 0.1) 30%,
+            transparent 40%
+    );
+    pointer-events: none;
+  }
 }

@@ -11,7 +11,7 @@ export function ExpertiseCard() {
     ]
 
     return (
-        <div className="relative ml-[20%] max-lg:w-full min-w-[345px] h-[248] overflow-hidden rounded-xl p-8 border border-white/10 inset-0 bg-white/4">
+        <div className="relative ml-[20%] max-lg:w-full min-w-[345px] h-[248] overflow-hidden rounded-xl p-8 border border-white/10 inset-0 bg-white/4 backdrop-blur-sm z-11">
             {/* Content Container */}
             <div className="relative h-full justify-between z-10 flex flex-col items-start gap-4">
                 {/* Top Text */}
