@@ -56,7 +56,7 @@ export default function MainNavbar() {
                             style={{width: "auto", height: "auto"}}
                         />
                     </Link>
-                    <NavigationMenu className="w-full min-w-[463px] border border-gray-150 rounded-full bg-white/10">
+                    <NavigationMenu className="w-full min-w-[468px] border border-gray-150 rounded-full bg-white/10">
                         <NavigationMenuList className="px-10">
                             <NavigationMenuItem className="px-2.5">
                                 <NavigationMenuLink
