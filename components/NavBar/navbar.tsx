@@ -8,6 +8,8 @@ import {
 } from "@/components/ui/navigation-menu";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
+import LanguageSwitcher from "@/components/ui/language-switcher";
+import { useTranslations } from 'next-intl';
 
 const ListItem = React.forwardRef<
     React.ElementRef<"a">,
@@ -38,9 +40,10 @@ const ListItem = React.forwardRef<
 ListItem.displayName = "ListItem";
 
 export default function MainNavbar() {
+    const t = useTranslations();
 
     return (
-        <header className="relative bg-transparent z-50 w-full transition-colors duration-300 mb-10">
+        <header id="Home" className="relative bg-transparent z-50 w-full transition-colors duration-300 mb-10">
             <div className="container mx-auto flex h-26 items-center justify-between px-4 lg:px-14">
                 <div className="flex items-center space-x-6">
                     <Link href="/" rel="alternate" className="flex items-center space-x-2 pr-10">
@@ -53,7 +56,7 @@ export default function MainNavbar() {
                             style={{width: "auto", height: "auto"}}
                         />
                     </Link>
-                    <NavigationMenu className="border border-gray-150 rounded-full bg-white/10">
+                    <NavigationMenu className="w-full min-w-[463px] border border-gray-150 rounded-full bg-white/10">
                         <NavigationMenuList className="px-10">
                             <NavigationMenuItem className="px-2.5">
                                 <NavigationMenuLink
@@ -61,7 +64,7 @@ export default function MainNavbar() {
                                     href="#Home"
                                     className="hover:cursor-pointer text-gray-700 dark:text-gray-200 hover:text-primary text-white"
                                 >
-                                    Home
+                                    {t("navigation.home")}
                                 </NavigationMenuLink>
                             </NavigationMenuItem>
                             <NavigationMenuItem className="px-2.5">
@@ -70,7 +73,7 @@ export default function MainNavbar() {
                                     href="#About"
                                     className="hover:cursor-pointer text-gray-700 dark:text-gray-200 hover:text-primary text-white"
                                 >
-                                    About
+                                    {t("navigation.about")}
                                 </NavigationMenuLink>
                             </NavigationMenuItem>
                             <NavigationMenuItem className="px-2.5">
@@ -79,25 +82,31 @@ export default function MainNavbar() {
                                     href="#Services"
                                     className="hover:cursor-pointer text-gray-700 dark:text-gray-200 hover:text-primary text-white"
                                 >
-                                    Services
+                                    {t("navigation.services")}
                                 </NavigationMenuLink>
                             </NavigationMenuItem>
                             <NavigationMenuItem className="px-2.5">
                                 <NavigationMenuLink
                                     rel="alternate"
-                                    href="#Terms & Conditions"
+                                    href="#Technologies"
                                     className="hover:cursor-pointer text-gray-700 dark:text-gray-200 hover:text-primary text-white"
                                 >
-                                    Terms & Conditions
+
+                                    {t("navigation.technologies")}
                                 </NavigationMenuLink>
                             </NavigationMenuItem>
                         </NavigationMenuList>
                     </NavigationMenu>
                 </div>
                 <div className="flex items-center space-x-6">
-                    <div className="text-white">+375335256894</div>
+                    <Link href="tel:+375293567150" className="text-white">+375 29 356 71 50</Link>
                     <div className="text-white">|</div>
-                    <div className="text-white">Help Centre</div>
+                    <Link href="https://mail.google.com/mail/?view=cm&to=vitali.stacklevel@gmail.com" target="_blank" rel="noopener noreferrer" className="text-white">
+                        vitali.stacklevel@gmail.com
+                    </Link>
+                </div>
+                <div>
+                    <LanguageSwitcher />
                 </div>
             </div>
         </header>

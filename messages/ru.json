@@ -1,0 +1,9 @@
+{
+  "navigation": {
+    "home": "На главную",
+    "about": "О нас",
+    "technologies": "Технологии",
+    "services": "Услуги",
+    "contact": "Контакты"
+  }
+}

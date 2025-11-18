@@ -1,7 +1,7 @@
 
 export function ExperienceSection() {
     return (
-        <section className="w-full container px-4 lg:px-14 mx-auto pt-10 pb-30">
+        <section id="About" className="w-full container px-4 lg:px-14 mx-auto pt-10 pb-30">
             <div className="flex w-full h-full text-center justify-center w-full">
                 <h1 className="font-normal text-7xl max-w-[1190px]">Revolutionize Your Workflow with Custom AI
                     Tools</h1>

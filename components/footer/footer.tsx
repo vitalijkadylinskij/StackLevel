@@ -42,11 +42,11 @@ export function Footer() {
                     <div>
                         <h4 className="text-white font-semibold mb-4">Menu</h4>
                         <ul className="space-y-2">
-                            <li><a href="/"
+                            <li><a href="#Home"
                                    className="text-gray-400 hover:text-white transition-colors text-sm">Home</a></li>
-                            <li><a href="#"
+                            <li><a href="#About"
                                    className="text-gray-400 hover:text-white transition-colors text-sm">About</a></li>
-                            <li><a href="#"
+                            <li><a href="#Home"
                                    className="text-gray-400 hover:text-white transition-colors text-sm">Contact</a></li>
                         </ul>
                     </div>
@@ -61,9 +61,7 @@ export function Footer() {
                 <div className="flex flex-col md:flex-row items-center justify-between gap-4 mt-16">
 
                     <div className="flex gap-6">
-                        <a href="#" className="text-gray-400 hover:text-white transition-colors text-sm">Terms</a>
-                        <a href="#" className="text-gray-400 hover:text-white transition-colors text-sm">Privacy</a>
-                        <a href="#" className="text-gray-400 hover:text-white transition-colors text-sm">Cookies</a>
+
                     </div>
 
                     <p className="text-gray-400 text-sm">© 2025 By Enative. All Rights Reserved.</p>

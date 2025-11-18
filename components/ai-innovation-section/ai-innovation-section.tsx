@@ -3,7 +3,7 @@ import {NetworkNode} from "@/components/ui/network-node";
 
 export function AiInnovationSection() {
     return (
-        <section className="w-full container pt-10 pb-30 px-4 w-full lg:px-14 h-full mx-auto">
+        <section id="Services" className="w-full container pt-10 pb-30 px-4 w-full lg:px-14 h-full mx-auto">
             <div className="flex flex-col">
                 <div className="flex justify-between w-full">
                     <h1 className="w-full max-w-[813px] font-normal text-6xl">Discover the Future of AI Innovation</h1>

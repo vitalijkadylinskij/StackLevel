@@ -1,4 +1,3 @@
-import BlueGradientBackground from "@/components/ui/blue-gradient-background";
 import {ExpertiseCard} from "@/components/ui/expertise-card";
 import Image from "next/image";
 import {CustomButton} from "@/components/ui/custom-button";
@@ -13,7 +12,7 @@ export function HeroSection() {
                 <Image
                     src="/images/hero-image.png"
                     alt="hero-image"
-                    width={2000}
+                    width={1000}
                     height={1000}
                     className="absolute object-cover top-1/2 -right-1/5 w-3/4 h-2/3 -translate-y-1/2 z-10"
                     style={{width: "auto", height: "auto"}}

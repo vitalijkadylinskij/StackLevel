@@ -3,7 +3,7 @@ import {CustomButton} from "@/components/ui/custom-button";
 
 export function AiPartnersSection() {
     return (
-        <section className="w-full container pt-10 pb-30 px-4 w-full lg:px-14 h-full mx-auto">
+        <section id="Technologies" className="w-full container pt-10 pb-30 px-4 w-full lg:px-14 h-full mx-auto">
             <div className="flex w-full justify-between items-stretch">
                 <div className="flex w-full max-w-[280px] font-medium text-2xl self-end">
                     Workflow with Custom AI Tools
